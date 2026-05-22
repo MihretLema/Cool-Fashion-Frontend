@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>COOL- Gallery</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <link href="assets/M imags/COOL FASHION NEW LOGO.png" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/m.css" rel="stylesheet">
+
+    <link href="assets/css/variables.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <style>
+        .gallery-section {
+            padding: 20px;
+        }
+
+        .gallery-masonry {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust minmax as needed */
+            gap: 15px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .gallery-item img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .project-item h3 {
+            margin-top: 20px;
+        }
+
+        .project-item p {
+            margin-bottom: 20px;
+        }
+
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .lightbox-image {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 1001;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/M imags/COOL FASHION NEW LOGO.png" alt="cool log">
+                <h1>COOL FASHION</h1>
+            </a>
+            <h8>FASHION DESIGN, MAKEUP & MODELING ACADEMY</h8>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="category.html">Service</a></li>
+                    <li class="dropdown"><a href="search-result.html"><span>Gallery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            <li><a href="search-result.html">Student Works</a></li>
+                            <li><a href="#">Graduation Ceremony</a></li>
+                            </ul>
+                    </li>
+                    <li><a href="single-post.html">Partners</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="position-relative">
+
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/CoolFashion.org/" class="mx-2"><span class="bi-facebook"></span></a>
+                    <a href="https://x.com/coolfashion720" class="mx-2"><span class="bi-twitter"></span></a>
+                    <a href="https://www.instagram.com/coolfashion720/" class="mx-2"><span class="bi-instagram"></span></a>
+                    <a href="https://www.tiktok.com/@coolfashion_school" class="mx-2"><span class="bi-tiktok"></span></a>
+                    <a href="https://www.tiktok.com/@coolfashion_school" class="mx-2"><span class="bi-linkedin"></span></a>
+
+
+                    <a href="#" class="mx-2 js-search-open">
+                        <span class=></span></a>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+
+                </div>
+
+                <div class="search-form-wrap js-search-form-wrap">
+                    <form action="search-result.html" class="search-form">
+                        <span class="icon bi-search"></span>
+                        <input type="text" placeholder="Search" class="form-control">
+                        <button class="btn js-search-close"><span class="bi-x"></span></button>
+                    </form>
+                </div>
+                </div>
+
+        </div>
+
+    </header>
+    <main id="main">
+
+        <section class="gallery-section">
+            <h2>Fashion Design Student Works</h2>
+            <div class="gallery-masonry">
+                <div class="gallery-item"><img loading="lazy" src="assets/M imags/m1.jpg" alt="Urban Chic 1" data-lightbox="project1"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/M imags/m2.jpg" alt="Urban Chic 2" data-lightbox="project1"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/M imags/m3.jpg" alt="Urban Chic 3" data-lightbox="project1"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/gallery/B11.JPG" alt="Urban Chic 4" data-lightbox="project1"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/M imags/m4.jpg" alt="Urban Chic 5" data-lightbox="project1"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/M imags/m5.jpg" alt="Urban Chic 6" data-lightbox="project1"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/M imags/m6.jpg" alt="Urban Chic 7" data-lightbox="project1"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/M imags/N6.jpg" alt="Urban Chic 8" data-lightbox="project1"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/M imags/m7.jpg" alt="Floral Fantasy 1" data-lightbox="project2"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/M imags/m8.jpg" alt="Floral Fantasy 2" data-lightbox="project2"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/M imags/m9.jpg" alt="Floral Fantasy 3" data-lightbox="project2"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/M imags/N2.jpg" alt="Floral Fantasy 4" data-lightbox="project2"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/M imags/m10.JPG" alt="Floral Fantasy 5" data-lightbox="project2"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/M imags/N3.jpg" alt="Floral Fantasy 6" data-lightbox="project2"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/M imags/N5.jpg" alt="Floral Fantasy 7" data-lightbox="project2"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/gallery/b4.JPG" alt="Floral Fantasy 8" data-lightbox="project2"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/gallery/b1.JPG" alt="More Design 1" data-lightbox="project3"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/M imags/N4.jpg" alt="More Design 2" data-lightbox="project3"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/M imags/N7.jpg" alt="More Design 3" data-lightbox="project3"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/gallery/b9.JPG" alt="More Design 4" data-lightbox="project3"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/gallery/896A5595 (2).JPG" alt="More Design 5" data-lightbox="project3"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/gallery/896A5220 (2).JPG" alt="More Design 6" data-lightbox="project3"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/gallery/896A5419 (2).JPG" alt="More Design 7" data-lightbox="project3"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/gallery/896A5473 (2).JPG" alt="More Design 8" data-lightbox="project3"></div>
+            </div>
+
+            <h2>Our Graduation Ceremony</h2>
+            <div class="gallery-masonry">
+                <div class="gallery-item"><img loading="lazy" src="assets/M imags/g1.JPG" alt="Graduation 1" data-lightbox="graduation"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/gallery/b7.JPG" alt="Graduation 2" data-lightbox="graduation"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/M imags/g7 (2).jpg" alt="Graduation 3" data-lightbox="graduation"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/M imags/g2.JPG" alt="Graduation 4" data-lightbox="graduation"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/M imags/g9.JPG" alt="Graduation 5" data-lightbox="graduation"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/M imags/a1.jpg" alt="Graduation 6" data-lightbox="graduation"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/M imags/g3.JPG" alt="Graduation 7" data-lightbox="graduation"></div>
+                <div class="gallery-item"><img loading="lazy" src="assets/M imags/a2.jpg" alt="Graduation 8" data-lightbox="graduation"></div>
+            </div>
+
+            <div class="lightbox" id="lightbox">
+                <span class="close-btn">×</span>
+                <img src="" alt="" class="lightbox-image">
+            </div>
+        </section>
+
+    </main>
+    <footer id="footer" class="footer">
+
+        <div class="footer-content">
+            <div class="container">
+
+                <div class="row g-5">
+                    <div class="col-lg-4">
+                        <h3 class="footer-heading">About Cool Fashion</h3>
+                        <p>The hidden beauty & talent comes to life! </p>
+                        <p><a href="about.html" class="footer-link-more">Learn More</a></p>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <h3 class="footer-heading"></h3>
+                        <ul class="footer-links list-unstyled">
+                            <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+                            <li><a href="category.html"><i class="bi bi-chevron-right"></i> Service</a></li>
+                            <li><a href="about.html"><i class="bi bi-chevron-right"></i> About us</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <h3 class="footer-heading"></h3>
+                        <ul class="footer-links list-unstyled">
+                            <li><a href="search-result.html"><i class="bi bi-chevron-right"></i> Gallery</a></li>
+                            <li><a href="single-post.html"><i class="bi bi-chevron-right"></i> Partners</a></li>
+                            <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <h3 class="footer-heading"> Our Address </h3>
+                        <ul class="footer-links footer-blog-entry list-unstyled">
+                            <li>
+                                <a href="contact.html" class="d-flex align-items-center">
+                                    <img src="assets/M imags/debrework.jfif" alt="" class="img-fluid me-3">
+                                    <div>
+                                        <span>No 1.Debrewerk building-13 floor, Adiss Ababa, Ethiopia</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-legal">
+            <div class="container">
+
+                <div class="row justify-content-between">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <div class="copyright">
+                            © 2025 <strong><span>COOL Fashion Design, Modeling & Makeup Academy </span>
+                            </strong>.
+                            <div>All Rights Reserved.</div>
+                        </div>
+
+                        <div class="credits">
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="social-links mb-3 mb-lg-0 text-center text-md-end">
+                            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://x.com/coolfashion720" class="twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="https://web.facebook.com/CoolFashion.org/" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com/coolfashion720/" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.youtube.com/@coolfashionschool" class="youtube"><i class="bi bi-youtube"></i></a>
+                            <a href="https://www.tiktok.com/@coolfashion_school" class="tiktok"><i class="bi bi-tiktok"></i></a>
+                            <p style="text-align: center;">Developed by Mihret Lema</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.

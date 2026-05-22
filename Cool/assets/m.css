@@ -1,0 +1,50 @@
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333; /* Dark gray text color */
+        }
+
+        .social-icons {
+            display: flex;
+            margin-right: 10px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 20px; /* Adjust icon size */
+            color: black; /* Initial black color */
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+/* ////////////////////// */
+        .social-Media a {
+            display: inline-block;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 15px; /* Adjust icon size */
+            color: black; /* Initial black color */
+            transition: color 0.3s ease;
+        }
+
+/* ////////////////////// */
+        .social-icons a:hover {
+            color: rgb(0, 153, 255); /* Blue hover color */
+        }
+        /* example social icon classes, you will need to change these to your icon library classes. */
+        .fa-facebook::before{
+            content: "\f082";
+        }
+        .fa-twitter::before{
+            content: "\f081";
+        }
+        .fa-instagram::before{
+            content: "\f16d";
+        }
+        .fa{
+            font-family: "FontAwesome";
+        }
+    
